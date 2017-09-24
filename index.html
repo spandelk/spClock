@@ -2,10 +2,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>spClock</title>
-		<script type="text/javascript" src="spClock.js"></script>
+		<script type="text/javascript" src="skClock.js"></script>
+		<style>
+			#box {
+				margin: auto;
+				width: 1050px;
+				/*border: red 1px solid;*/
+			}
+			h1 {font-family: arial}
+			body {background-color: black}
+		</style>
 	</head>
-	<body>
-		<p id="par"></p>
-		<p id="par2" style="font-size: 30px"></p>
+	<body onload="loaded()">
+		<div id="box">
+			<h1 id="header">
+				<span class="tekst" id="txt_jest"> JEST </span><br>
+				<span class="tekst" id="txt_za"> ZA </span><span class="tekst" id="txt_30"> TRZYDZIEŚCI </span><span class="tekst" id="txt_20"> DWADZIEŚCIA </span><span class="tekst" id="txt_10"> DZIESIĘĆ </span><br>
+				<span class="tekst" id="txt_1"> JEDEN </span><span class="tekst" id="txt_2"> DWA </span><span class="tekst" id="txt_3"> TRZY </span><span class="tekst" id="txt_4"> CZTERY </span><span class="tekst" id="txt_5"> PIĘĆ </span><span class="tekst" id="txt_6"> SZEŚĆ </span><span class="tekst" id="txt_7"> SIEDEM </span><span class="tekst" id="txt_8"> OSIEM </span><span class="tekst" id="txt_9"> DZIEWIĘĆ </span><br>
+				<span class="tekst" id="txt_11"> JEDE </span><span class="tekst" id="txt_14"> CZTER </span><span class="tekst" id="txt_15"> PIĘT </span><span class="tekst" id="txt_16"> SZES </span><span class="tekst" id="txt_19"> DZIEWIĘT </span><span class="tekst" id="txt_nascie"> NAŚCIE </span><br>
+				<span class="tekst" id="txt_po"> PO </span><span class="tekst" id="txt_pierwsz"> PIERWSZ </span><span class="tekst" id="txt_drug"> DRUG </span><span class="tekst" id="txt_trzeci"> TRZECI </span><span class="tekst" id="txt_czwart"> CZWART </span><span class="tekst" id="txt_piat"> PIĄT </span><span class="tekst" id="txt_szost"> SZÓST </span><span class="tekst" id="txt_siodm"> SIÓDM </span><span class="tekst" id="txt_osm"> ÓSM </span><span class="tekst" id="txt_dziewiat"> DZIEWIĄT </span><span class="tekst" id="txt_dziesiat"> DZIESIĄT </span><span class="tekst" id="txt_jedenast"> JEDENAST </span><span class="tekst" id="txt_dwunast"> DWUNAST </span><span class="tekst" id="txt_a"> A </span><span class="tekst" id="txt_ej"> EJ </span><br>
+				<span class="tekst" id="txt_30_2"> : TRZYDZIEŚCI </span>
+			</h1>
+		</div>
 	</body>
 </html>

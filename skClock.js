@@ -1,11 +1,17 @@
+var text_visible = "#3030dc";
+var text_hidden = "#070707";
+
+function loaded() {
+	document.getElementById("header").style.color = text_hidden;
+}
+
 function clock() {
 	var teksty = document.getElementsByClassName("tekst");
 	for (var i in teksty) {
   		if (teksty.hasOwnProperty(i)) {
-    		teksty[i].style.color = "white";
+    		teksty[i].style.color = text_hidden;
   		}
 	}
-	document.getElementById("h1").style.color = "white";
 	d = new Date();
 	h = d.getHours();
 	m = d.getMinutes();
@@ -72,9 +78,9 @@ function clock() {
 		if ((h == 12)|| (h == 0)) {clb("txt_pierwsz")}
 		clb("txt_za"); clb("txt_a");
 	}
-	if ((m == 0)|| (m == 30)) {document.getElementById("txt_ej").style.color = "white"; document.getElementById("txt_po").style.color = "white"; clb("txt_a")}
+	if ((m == 0)|| (m == 30)) {document.getElementById("txt_ej").style.color = text_hidden; document.getElementById("txt_po").style.color = text_hidden; clb("txt_a")}
 }
 
-function clb(markup) {document.getElementById(markup).style.color = "black"}
+function clb(markup) {document.getElementById(markup).style.color = text_visible}
 
 setInterval(clock, 1000);
