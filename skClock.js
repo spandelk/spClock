@@ -1,8 +1,18 @@
-var text_visible = "#3030dc";	//Kolor tekstu na pierwszym planie
-var text_hidden = "#070707";	//Kolor tekstu "w tle"
+//Zmienne do dowolnej modyfikacji
+var text_visible = "crimson"; //Kolor tekstu na pierwszym planie
+var text_hidden = "#070707"; //Kolor tekstu "w tle"
+var font_size = "40px"; //Wielkosć czcionki
+var font_family = "Arial Black"; //Czczionka
+var width = "1000px"; //Szerokość "pudełka"
+var bgcolor = "black"; //Kolor tła
 
+//Aplikacja zmiennych
 function loaded() {
 	document.getElementById("header").style.color = text_hidden;
+	document.getElementById("header").style.fontSize = font_size;
+	document.getElementById("header").style.fontFamily = font_family;
+	document.getElementById("box").style.width = width;
+	document.getElementById("box").style.backgroundColor = bgcolor;
 }
 //Główna funkcja odpowiedzialna za zegar
 function clock() {
