@@ -1,2 +1,2 @@
 # spClock
-Taki sobie zegar, na ą chwilę nic ciekawego.
+Taki sobie zegar, na tą chwilę nic ciekawego.
